@@ -1,9 +1,9 @@
 let flash;
-flash = prompt("Please, enter the password", "");
+flash = prompt("PLEASE, ENTER THE PASSWORD", "");
 const frfrfr = "1234s";
 if (frfrfr == flash) {
-  alert("Correct password, click ok to enter");
+  alert("CORRECT PASSWORD! CLICK OK TO ENTER");
 } else {
-  alert("Wrong Password");
+  alert("WRONG PASSWORD!");
   window.location = "https://www.linkedin.com/in/shahinhsynzd/";
 }
