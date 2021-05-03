@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background-color: #add8e6;
+  --left-side: #003147;
+  --right-side: #fff;
+  --border-bottom: #ffffff33;
+  --icon-color: #03a9f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+/* MAIN CONTAINER */
+.container {
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  min-height: 1000px;
+  width: 1000px;
+  margin: 50px auto;
+}
+/* //////////////////////////////////////// */
+
+/* LEFT SIDE */
+.left-side {
+  background-color: var(--left-side);
+  padding: 40px;
+  color: #fff;
+  -webkit-print-color-adjust: exact !important;
+}
+
+/* Profile Image and Text */
+.profile-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-bottom);
+}
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-text h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.birth-date {
+  font-size: 0.8em;
+}
+.birthday {
+  font-weight: 600;
+  color: var(--icon-color);
+}
+
+/* General Info */
+.info {
+  margin: 20px 0;
+}
+.bold {
+  font-weight: 800;
+  margin-right: 3px;
+}
+/* Contact Info */
+.contact-info h3,
+.info h3,
+.skills-info h3 {
+  padding: 20px 0;
+}
+
+.contact-info ul li,
+.info ul li {
+  list-style-type: none;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Icon */
+.contact-info .icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.contact-info .icon i {
+  color: var(--icon-color);
+}
+
+.contact-info a {
+  color: #fff;
+}
+
+/* Language Info */
+.language-info .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #081921;
+  margin-top: 10px;
+}
+.language-info .percent span {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  background-color: var(--icon-color);
+  z-index: 1;
+}
+.language-info .percent .nm1 {
+  width: 99%;
+}
+.language-info .percent .nm2 {
+  width: 96%;
+}
+.language-info .percent .nm3 {
+  width: 80%;
+}
+.honors-awards ul {
+  padding-left: 10px;
+}
+.honors-awards ul li {
+  padding-left: 10px;
+  list-style-type: decimal;
+}
+.honors-awards h4 {
+  font-weight: 500;
+}
+/* /////////////////////////////////////////////// */
+/* RIGHT SIDE */
+.about-sec,
+.about-sec .headings {
+  margin-bottom: 30px;
+}
+
+.right-side {
+  background-color: var(--right-side);
+  padding: 40px;
+  color: var(--left-side);
+}
+.right-side a {
+  color: #000;
+}
+.box {
+  margin: 40px auto;
+  position: relative;
+}
+.sec {
+  position: relative;
+}
+.time {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.date,
+.workplace {
+  margin-bottom: 10px;
+}
+.description ul {
+  padding-left: 40px;
+}
+
+.divider {
+  margin: 60px 0 30px;
+  position: relative;
+  left: 40%;
+  font-size: 1.6rem;
+}
+
+/* Digital Skills */
+.box-digital {
+  margin: 40px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-big {
+  text-align: center;
+}
+.icon-big i {
+  font-size: 4em;
+}
+.fa-html5 {
+  color: #ff4500;
+}
+.fa-css3-alt {
+  color: #03a9f4;
+}
+.fa-js {
+  color: yellow;
+}
+/* Printing */
+@media print {
+  .container {
+    box-shadow: none;
+    margin: 0 auto;
+  }
+  .left-side {
+    padding: 40px 20px;
+  }
+}
