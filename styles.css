@@ -200,7 +200,6 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
 .icon-big {
   text-align: center;
 }
@@ -216,6 +215,9 @@ body {
 .fa-js {
   color: yellow;
 }
+.js {
+  overflow-wrap: anywhere;
+}
 /* Mobile */
 @media (max-width: 700px) {
   .container {
@@ -224,7 +226,11 @@ body {
     margin: 10px;
   }
 }
-
+@media (max-width: 500px) {
+  .box-digital {
+    display: block;
+  }
+}
 /* Printing */
 @media print {
   .container {
