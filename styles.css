@@ -13,7 +13,6 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
@@ -22,16 +21,18 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
+
 /* MAIN CONTAINER */
 .container {
-  min-height: 100px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   min-height: 1000px;
   width: 1000px;
   margin: 50px 20px;
+  overflow-x: hidden;
 }
 /* //////////////////////////////////////// */
 
@@ -95,6 +96,7 @@ body {
 
 .contact-info ul li,
 .info ul li {
+  display: list-item;
   list-style-type: none;
   font-size: 0.8em;
   padding-bottom: 10px;
@@ -169,9 +171,9 @@ body {
   margin: 40px auto;
   position: relative;
 }
-.sec {
+/* .sec {
   position: relative;
-}
+} */
 .time {
   font-size: 0.9rem;
   font-weight: 600;
@@ -186,7 +188,7 @@ body {
 }
 
 .divider {
-  margin: 60px 0 30px;
+  margin: 10px 0;
   position: relative;
   left: 40%;
   font-size: 1.6rem;
@@ -225,6 +227,9 @@ body {
     max-width: 600px;
     margin: 10px;
   }
+  /* .icon-big {
+    margin-bottom: 20px;
+  } */
 }
 @media (max-width: 500px) {
   .box-digital {
@@ -234,8 +239,10 @@ body {
 /* Printing */
 @media print {
   .container {
+    display: grid !important;
     box-shadow: none;
-    margin: 0 auto;
+    margin: 0 0;
+    max-width: 1000px;
   }
   .left-side {
     padding: 40px 20px;
