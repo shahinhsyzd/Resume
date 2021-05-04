@@ -13,6 +13,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   min-height: 1000px;
   width: 1000px;
-  margin: 50px auto;
+  margin: 50px 20px;
 }
 /* //////////////////////////////////////// */
 
@@ -44,6 +45,7 @@ body {
 
 /* Profile Image and Text */
 .profile-text {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,6 +216,15 @@ body {
 .fa-js {
   color: yellow;
 }
+/* Mobile */
+@media (max-width: 700px) {
+  .container {
+    display: block;
+    max-width: 600px;
+    margin: 10px;
+  }
+}
+
 /* Printing */
 @media print {
   .container {
