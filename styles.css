@@ -23,7 +23,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
 /* MAIN CONTAINER */
 .container {
   display: grid;
@@ -194,6 +193,9 @@ body {
   font-size: 1.6rem;
 }
 
+.wrap-x a {
+  overflow-wrap: anywhere;
+}
 /* Digital Skills */
 .box-digital {
   margin: 40px auto;
