@@ -244,4 +244,23 @@ body {
   .left-side {
     padding: 40px 20px;
   }
+  .profile-text h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .birthday {
+    font-size: 0.9em;
+  }
+  .contact-info ul li,
+  .info ul li {
+    font-size: 0.6em;
+  }
+  .info h3 {
+    font-size: 1em;
+  }
+  /* Right Side */
+  .headings {
+    font-size: 1.2em;
+  }
 }
