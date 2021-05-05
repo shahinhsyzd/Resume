@@ -237,8 +237,9 @@ body {
   .container {
     display: grid !important;
     box-shadow: none;
-    margin: 0 0;
-    max-width: 1000px;
+    margin: auto;
+    max-width: 99%;
+    border: 1px solid var(--left-side);
   }
   .left-side {
     padding: 40px 20px;
