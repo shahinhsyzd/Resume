@@ -153,6 +153,14 @@ body {
 }
 /* /////////////////////////////////////////////// */
 /* RIGHT SIDE */
+.lang-selection ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.lang-selection ul li {
+  list-style-type: none;
+  margin-left: 10px;
+}
 .about-sec,
 .about-sec .headings {
   margin-bottom: 30px;
@@ -234,6 +242,9 @@ body {
 }
 /* Printing */
 @media print {
+  .lang-selection ul {
+    display: none;
+  }
   .container {
     display: grid !important;
     box-shadow: none;
