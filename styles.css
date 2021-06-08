@@ -50,7 +50,7 @@ body {
 }
 .left-side {
   background-color: var(--left-side);
-  padding: 40px;
+  padding: 30px 40px;
   color: #fff;
   -webkit-print-color-adjust: exact !important;
 }
@@ -180,7 +180,7 @@ body {
 
 .right-side {
   background-color: var(--right-side);
-  padding: 40px;
+  padding: 20px 40px;
   color: var(--left-side);
 }
 .right-side a {
@@ -272,6 +272,9 @@ body {
   .lang-selection ul {
     display: none;
   }
+  .lang-selection1 ul {
+    display: none;
+  }
   .container {
     display: grid !important;
     box-shadow: none;
@@ -280,7 +283,10 @@ body {
     border: 1px solid var(--left-side);
   }
   .left-side {
-    padding: 40px 20px;
+    padding: 20px 20px;
+  }
+  .right-side {
+    padding: 20px 20px;
   }
   .profile-text h2 {
     font-size: 1.2em;
