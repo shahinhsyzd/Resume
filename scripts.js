@@ -7,7 +7,7 @@ if (frfrfr == flash) {
   );
 } else {
   alert(
-    "ŞİFRƏ DÜZGÜN DEYİL! LİNKEDİNƏ YÖNLƏNDİRİLİR / WRONG PASSWORD! REDIRECTING TO LINKEDIN!"
+    "YANLIŞ ŞİFRƏ! LİNKEDİNƏ YÖNLƏNDİRİLİR / WRONG PASSWORD! REDIRECTING TO LINKEDIN!"
   );
   window.location = "https://www.linkedin.com/in/shahinhsynzd/";
 }
